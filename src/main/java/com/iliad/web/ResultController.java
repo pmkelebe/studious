@@ -38,7 +38,7 @@ public class ResultController {
     }
 
     private boolean isNumeric(String strNum) {
-        final String numRegEx = "[0-9.?]+";
+        final String numRegEx = "[0-9]+";
         if (strNum != null && strNum.matches(numRegEx)) {
             return true;
         }
