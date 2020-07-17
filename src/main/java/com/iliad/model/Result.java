@@ -11,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Result {
-    private Integer result;
-    private List<Long> acceptedInputs = new ArrayList();
+    private Integer result = 0;
+    private List<Integer> acceptedInputs = new ArrayList();
     private List<String> allInputs =  new ArrayList();
 }
