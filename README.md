@@ -58,12 +58,14 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
 ####Project Structure
 - src/main/java - All application classes.
   - src/main/java/com/iliad/ - Application class to start the application.
+  - src/main/java/com/iliad/service/ - ResultService class and its implementation
   - src/main/java/com/iliad/model/ - Result class.
   - src/main/java/com/iliad/web/ - ResultController class.
 
 - src/main/resources - All resources used in main application.
 
 - src/test/java - All test classes
+  - src/test/java/com/iliad/service/ - Tests for ResultServiceImpl class.
   - src/test/java/com/iliad/web/ - Tests for ResultController class. 
 
  ####Building
