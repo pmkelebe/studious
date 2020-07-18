@@ -3,7 +3,6 @@ package com.iliad.service;
 import com.iliad.model.Result;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,12 +18,12 @@ public class ResultServiceImpl implements ResultService {
             result.setResult(nbrs.length);
 
             //Accepted inputs
-            final List<Integer> av = new ArrayList<>();
-            List<String> acceptedInputs = Arrays.stream(nbrs)
+            List<Integer> acceptedInputs = Arrays.stream(nbrs)
                     .filter(n -> isNumeric(n))
+                    .map(n -> Integer.valueOf(n))
                     .collect(Collectors.toList());
-            acceptedInputs.stream().forEach(n -> av.add(Integer.valueOf(n)));
-            result.setAcceptedInputs(av);
+
+            result.setAcceptedInputs(acceptedInputs);
 
             //All inputs
             List<String> allInputs = Arrays.stream(nbrs)
