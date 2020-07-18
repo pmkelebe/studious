@@ -98,5 +98,5 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
   Note that the dot is required at the end of the command.
    - docker build -t <your_image_name> . 
  - Start your container 
-   - docker run  <your_image_name>
+   - docker run  -p 8080:8080 <your_image_name>
  
