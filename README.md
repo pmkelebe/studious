@@ -14,7 +14,7 @@ Build a simple REST controller that accepts a comma-separated query parameter as
 For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,NaN,,,,65,32,,,NaN,aString,4,56,99' will produce the following result:
 
  
-#####Example Json
+##### Example Json
  ```
 {
   "result": 266,
@@ -48,14 +48,14 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
   ]
 }
 ```
-####Dependencies 
+#### Dependencies 
 - spring-boot-starter-web 2.3.1.RELEASE
 - spring-boot-starter-test 2.3.1.RELEASE
 - jackson-databind 2.10.2
 - lombok 1.18.12
 - junit 4.12
 
-####Project Structure
+#### Project Structure
 - src/main/java - All application classes.
   - src/main/java/com/iliad/ - Application class to start the application.
   - src/main/java/com/iliad/service/ - ResultService class and its implementation
@@ -68,7 +68,7 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
   - src/test/java/com/iliad/service/ - Tests for ResultServiceImpl class.
   - src/test/java/com/iliad/web/ - Tests for ResultController class. 
 
- ####Building
+ #### Building
  
  Clone locally the project by using this command
  - git clone https://github.com/pmkelebe/studious.git
@@ -76,12 +76,12 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
  Build the app locally from the project root folder (/iliad)
  - mvn -U package
  
- ####Running Tests
+ #### Running Tests
  
  To run all the test run the following maven goal under /iliad 
  - mvn -U test
  
- ####Running App
+ #### Running App
  
  To run the app, use the following command
  - java -jar target/iliad-0.0.1-SNAPSHOT.jar
@@ -89,7 +89,7 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
  The jar file has all the dependencies. You can copy this from /target folder to any location and then use this command:
  - java -jar iliad-0.0.1-SNAPSHOT.jar
  
- ####Running App in a Docker container
+ #### Running App in a Docker container
   
  There is a Dockerfile in the project root folder /iliad
  - Build project
