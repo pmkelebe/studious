@@ -1,4 +1,4 @@
-package com.iliad.web;
+package com.iliad.comtroller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.iliad.model.Result;
@@ -31,9 +31,6 @@ class ResultControllerTest {
 
     @MockBean
     private ResultService mockResultService;
-
-    // controller under test
-    private ResultController resultController;
 
     private JacksonTester<Result> jsonResponse;
 

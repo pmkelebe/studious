@@ -1,4 +1,4 @@
-package com.iliad.web;
+package com.iliad.comtroller;
 
 
 import com.iliad.model.Result;

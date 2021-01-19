@@ -60,13 +60,14 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
   - src/main/java/com/iliad/ - Application class to start the application.
   - src/main/java/com/iliad/service/ - ResultService class and its implementation
   - src/main/java/com/iliad/model/ - Result class.
-  - src/main/java/com/iliad/web/ - ResultController class.
-
+  - src/main/java/com/iliad/controller/ - ResultController class.
+  - src/main/java/com/iliad/config/ - configuration class(es).
+  
 - src/main/resources - All resources used in main application.
 
 - src/test/java - All test classes
   - src/test/java/com/iliad/service/ - Tests for ResultServiceImpl class.
-  - src/test/java/com/iliad/web/ - Tests for ResultController class. 
+  - src/test/java/com/iliad/controller/ - Tests for ResultController class. 
 
  #### Building
  
@@ -98,5 +99,5 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
   Note that the dot is required at the end of the command.
    - docker build -t <your_image_name> . 
  - Start your container 
-   - docker run  -p 8080:8080 <your_image_name>
+   - docker run  -p 8080:8080 -p 8443:8443 <your_image_name>
  
