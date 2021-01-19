@@ -1,0 +1,13 @@
+
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    protocol: TLS
+    key-alias: ssl-example
+    key-store-type: PKCS12
+    key-store: classpath:ssl-example.pfx
+    key-store-password: password01
+spring:
+  application:
+    name: ILIAD
