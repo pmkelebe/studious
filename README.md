@@ -53,7 +53,7 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
 - spring-boot-starter-test 2.3.1.RELEASE
 - jackson-databind 2.10.2
 - lombok 1.18.12
-- junit 4.12
+- junit 4.13.1
 
 #### Project Structure
 - src/main/java - All application classes.
