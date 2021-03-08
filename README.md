@@ -51,7 +51,7 @@ For example, a call to the endpoint 'http://localhost:8080/totals?numbers=1,4,5,
 #### Dependencies 
 - spring-boot-starter-web 2.3.1.RELEASE
 - spring-boot-starter-test 2.3.1.RELEASE
-- jackson-databind 2.10.2
+- jackson-databind 2.10.5.1
 - lombok 1.18.12
 - junit 4.13.1
 
